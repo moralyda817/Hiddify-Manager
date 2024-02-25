@@ -16,5 +16,5 @@
 # RUN curl -L https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl.py -o /usr/bin/systemctl
 # ENTRYPOINT ["/bin/bash","-c", "./apply_configs.sh && tail -f /opt/hiddify-manager/log/system/*"]
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 CMD ["bash"]
