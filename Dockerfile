@@ -2,7 +2,8 @@ FROM ubuntu:22.04
 EXPOSE 80
 EXPOSE 443
 
-RUN apt-get update && apt-get install -y whiptail apt-utils curl sudo systemd python2 xxd lsof python-pip
+RUN apt-get update && apt-get install -y whiptail apt-utils curl sudo systemd python2 xxd lsof python-pip python3-pip
+RUN pip install --upgrade pip
 
 ENV TERM xterm
 ENV TZ Etc/UTC
